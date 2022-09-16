@@ -1,13 +1,14 @@
-# lazykh
+Auto-Animate and Lipsync
+
 This Github repo has the source code for the automatic lip-syncing project described in these videos:
 
 2020: https://www.youtube.com/watch?v=y3B8YqeLCpY 
 
 2022 (includes walkthrough tutorial): https://www.youtube.com/watch?v=ItVnKlwyWwA
 
-Creating a video using this lazykh code is a 5-step-process! (That sounds intimidating, but some steps take under 5 seconds.) 
+Creating a video using this code is a 5-step-process! (That sounds intimidating, but some steps take under 5 seconds.) 
 
-2022-07-20 UPDATE: I added frame-caching to Step 4 (frame drawing), which speeds up the frame-drawing by about 5 times! (Now, if it detects that the current frame has the exact same parameters as a previously-rendered frame, it will just copy-paste that frame, which is much faster.) So, to render a 5-minute video, it only takes around 10-12 minutes on my machine, instead of one hour.
+2022-07-20 UPDATE: frame-caching added to Step 4 (frame drawing), which speeds up the frame-drawing by about 5 times! If it detects that the current frame has the exact same parameters as a previously-rendered frame, it will copy-paste that frame, which is much faster. So, to render a 5-minute video, it only takes around 10-12 minutes on my machine, instead of one hour.
 
 ## Things to know before starting
 For Step 2, "Gentle" (the phoneme detection library I'm using) will only work on Mac OS. However, Steps 1, 3, 4, and 5 can be done on any computer. The source code for "gentle" comes from here: https://github.com/lowerquality/gentle. However, I've found the only way to get gentle to work is to run this command, ideally from within the lazykh folder:
